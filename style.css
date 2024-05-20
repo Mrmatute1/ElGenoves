@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'roboto', sans-serif;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.8em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+#Ccolor{
+    color: red;
+}
+
+body{
+background-color:grey;
+}
+
+
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+    
+    header{
+        background-color: rgb(30, 30, 30);
+    }
+    
+    header.logo{
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header.nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(245, 245, 245);
+}
+
+header a:hover{
+    background: linear-gradient(to right, #009246, #FFFFFF, #CE2B37); /* Verde, Blanco, Rojo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#hero{
+    
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) 
+    ,url(IMAGES/matambre1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+#hero h1{
+    background: linear-gradient(to right, #009246, #FFFFFF, #CE2B37); /* Verde, Blanco, Rojo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+#quienesSomos .container{
+    display: flex;
+    text-align: center;
+    padding: 200px 12px;
+    color: #fff;
+}
+
+#catalogo{
+    background-color: rgb(30, 30, 30);
+    
+}
+
+
+#catalogo .container{
+    color: aliceblue;
+    text-align: center;
+    padding: 120px 12px;
+}
+
+#catalogo h2{
+    background: linear-gradient(to right, #009246, #FFFFFF, #CE2B37); /* Verde, Blanco, Rojo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+#cat{
+    width: 300px;
+    height: auto;
+}
+
+#mat{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#mat p{
+    background-color: gray;
+    margin-top: 0;
+    color: black;
+}
+
+#ubicacion{
+    margin-top: 10px;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+}
+
+#ubicacion #title{
+    background: linear-gradient(to right, #009246, #FFFFFF, #CE2B37); /* Verde, Blanco, Rojo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#ubicacion h2{
+    color: #fff;
+    text-align: center;
+}
+
+#ubicacion ul{
+    padding: 5px;
+}
+
+#ubicacion li{
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    font-weight:bold ;
+    font-size: 1.8em;
+}
+
+#contactos{
+    margin: 10px 0;
+}
+
+#contactos h2{
+    background: linear-gradient(to right, #009246, #FFFFFF, #CE2B37); /* Verde, Blanco, Rojo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+#contactos .container{
+    margin: 10px 20;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    justify-content: center;
+    align-items: center;
+    color: #fff ;
+
+}
+
+#contactos ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#contactos li{
+    padding: 20px;
+    margin: 0;
+    background-color: black;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+#contactos a{
+    margin: 0;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+#contactos img{
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+    filter: grayscale(100%);
+}
+
+
+#contactos img:hover{
+    filter: grayscale(0%);
+}
+
+#copy{
+    padding: 30px 0;
+    background-color: rgb(30, 30, 30);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+@media (min-width: 789px){
+    
+    h2{font-size: 4em;}
+
+    header{
+        position: fixed;
+        width: 100%;
+        margin: auto;
+        z-index: 9999;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    header nav a{
+        font-size: 1.5em;
+    }
+
+    #hero #bienvenido{
+        font-size: 150px;
+
+    }
+
+    #quienesSomos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #quienesSomos .textContainer{
+        width: 50%;
+        max-width: 750px;
+        text-align: initial;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienesSomos .imgContainer{
+        background-image: url(IMAGES/genoves-fondo\ transparente.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #catalogo .container h2{
+        font-size: 6em;
+    background: linear-gradient(to right, #009246, #FFFFFF, #CE2B37); /* Verde, Blanco, Rojo */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    }
+
+    #cat{
+        width: 600px;
+        height: auto;
+    }
+
+    #productos #mat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #productos #mat img {
+        width: 600px; 
+        height: auto;
+    }
+    
+    #productos #mat p {
+        padding: 0;
+        max-width: 600px;
+    }
+    
+    #mat p{
+        padding: 20px 0;
+        margin: 5px 0;
+    }
+
+    #ubicacion{
+        padding: 100px 0;
+    }
+
+    #contactos{
+        margin: 10px 0;
+        justify-self: center;
+    }
+
+    #contactos .container{
+        height: 90vh;
+        background-image:linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ) 
+        ,url(IMAGES/WhatsApp\ Image\ 2024-05-19\ at\ 10.45.19.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover ;
+        
+    }
+
+    #contactos li{
+        background-color: black;
+        margin: 0 10px;
+        border-radius: 10px;
+    }
+
+    #contactos img{
+        width: 80px;
+        height: auto;
+    }
+
+
+    #copy{
+        padding: 50px 0;
+        font-size: 1.7em;
+        margin-bottom: 0;
+    }
+
+}
